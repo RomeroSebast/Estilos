@@ -1,0 +1,78 @@
+
+div.contenedor{
+	width:100%;
+	border: 1px solid rgb(5, 247, 126);
+	}
+
+header, footer{
+padding: 1 em;
+color: white;
+background-color: rgb(129, 233, 176);
+clear: left;
+text-align: center;
+}
+
+nav{
+float: left;
+max-width:160px;
+margin:0;
+padding: 1em;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul a {
+/*<!--color: orangered;-->*/
+text-decoration: none;
+}
+
+article {
+margin-left: 170px;
+border-left: 2px solid rgb(4, 247, 125);
+padding: 1 em;
+overflow: hidden;
+}
+
+img {
+            display: block;
+            margin: auto;
+        }
+
+/* MOVIMIENTO*/
+@keyframes moverTexto {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .texto-con-movimiento {
+            animation: moverTexto 3s ease infinite; /* Cambia el valor de "3s" para ajustar la velocidad de la animación */
+        }
+/*SE ACAVA EL MOVIMIENTO*/
+
+/* MOVIMIENTO2*/
+@keyframes moverTexto1 {
+            0% {
+                transform: translateX(3px);
+            }
+            50% {
+                transform: translateX(300px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .texto-con-movimiento1 {
+            animation: moverTexto1 5s ease infinite; /* Cambia el valor de "3s" para ajustar la velocidad de la animación */
+        }
+/*fin del MOVIMIENTO2*/
